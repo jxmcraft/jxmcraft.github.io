@@ -1,65 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> I'll add a log tmr</title>
+        <title> Welcome to my website! </title>
     </head>
     <body id = "body">
-        <p>There really isn't much to here. I'll add a log tomorrow, but I'll still update the readMe. I still haven't made the log yet. But hey! The button does something now!</p>
-        <button onclick = "bcolor()"> button </button>
-        <button onclick = "stop()"> stop </button>
-        <button onclick = "rainbow()"> rainbow</button>
-        <button onclick = "reset()"> reset</button>
+        <h1> Welcome to my website! </h1>
+        <p>This is my website! Well basically I will <i>hopefully</i> update this website every day, no matter how small.</p>
+        <p>I will be posting about my code projects, my interests and other things that I don't have the capacity to think of currently.</p>
+        <p>So, basically this entire website is just my portfolio! Anyhow, I hope whoever is reading this have a wonderful day/night, as I might (?) see you next itme.</p>
+        <a href = "./jxmcraft/about_me.html"> Go to my <strong>About me</strong>!</a>
+        <a href = "./jxmcraft/projects.html"> Go to my <strong>Projects</strong>!</a>
+        <a href = "./jxmcraft/blogs.html"> Go to my <strong>Blogs</strong>!</a>
     </body>
-    <a href = "https://www.youtube.com/watch?v=xvFZjo5PgG0"> Another thing I added.</a>
-    <script>
-        var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
-        var colorIndex = 0;
-        var R = Math.floor(Math.random() * 255);
-        var G = Math.floor(Math.random() * 255);
-        var B = Math.floor(Math.random() * 255);
-        var i = true;
-        function rainbow() {
-            if (!i){
-                return;
-            }
-            setTimeout(function randomcolor() {
-            // Update the background color
-            document.getElementById("body").style.backgroundColor = "rgb(" + R + ", " + G + ", " + B + ")";
-
-            // Randomly increase or decrease RGB values
-            if (Math.random() > 0.5) {
-                R = Math.min(R + 1, 255);
-            } else {
-                R = Math.max(R - 1, 0);
-            }
-            if (Math.random() > 0.5) {
-                G = Math.min(G + 1, 255);
-            } else {
-                G = Math.max(G - 1, 0);
-            }
-            if (Math.random() > 0.5) {
-                B = Math.min(B + 1, 255);
-            } else {
-                B = Math.max(B - 1, 0);
-            }
-            if (i){
-                rainbow();
-            }
-            
-            }, 50);
-        }
-        function bcolor(){
-            if (colorIndex >= colors.length){
-                colorIndex = 0;
-            }
-            document.getElementById("body").style.backgroundColor = colors[colorIndex++];
-        }
-        function stop(){
-            i = false;
-        }
-        function reset(){
-            i = true;
-            document.getElementById("body").style.backgroundColor = "white";
-        }
-    </script>
 </html>
