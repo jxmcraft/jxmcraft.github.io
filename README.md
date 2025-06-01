@@ -10,3 +10,5 @@ day 3: fuck i forgot
 day 4: did nothing
 
 day 5: restructured the entire website
+
+day 6: finally back at it after 2 months.
